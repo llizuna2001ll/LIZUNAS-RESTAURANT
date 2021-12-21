@@ -1,0 +1,356 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+        width: 10px;
+}
+::-webkit-scrollbar-track {
+        background: #000;
+}
+::-webkit-scrollbar-thumb {
+        background: #a9927d;
+}
+body{
+    background-color: #f2f4f3 ;
+    background-color: rgb(169, 146, 125);
+
+}
+
+.nav-bar{
+    background-color: #0a0908;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 130px;
+
+}
+
+.nav-bar .logo{
+    letter-spacing: 1.5px;
+    margin: .5rem;
+    margin-left: 3rem;
+    margin-top: 20px;
+}
+
+
+.links{
+    margin-top: 30px;
+    margin-left: 420px;
+}
+
+.nav-bar ul{
+    display: flex;
+    margin-right: 20px;
+    margin-top: -10px;
+
+}
+
+.nav-bar ul li{
+    margin: 10px 10px;
+    list-style: none;
+
+}
+
+.nav-bar ul li a{
+
+    color: #a9927d;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border:#a9927d solid;
+    padding: 15px 30px;
+    transition: 0.7s ;
+}
+
+.nav-bar ul li a:hover{
+    color: #C5B6A8;
+    border: #C5B6A8 solid;
+    box-shadow: 5px 5px rgba(169, 169, 169, 0.45);
+
+}
+
+.mySlides{
+
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+
+ @keyframes fade {
+     from {opacity: .6}
+     to {opacity: 1}
+}
+
+.patty p{
+    position: absolute;
+}
+
+
+
+#attract{
+    top:260px;
+    margin-left: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+ #sattract{
+        top:380px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+}
+#attract1{
+        top:260px;
+        margin-left:800px;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+}
+#sattract1{
+        top:380px;
+        margin-left: 800px;
+        font-size: 20px;
+        color: white;
+        text-transform: uppercase;
+}
+
+
+.button{
+    position: absolute;
+    top: 480px;
+    text-align: center;
+    margin-left: 200px;
+    height:45px;
+    width:122px;
+    line-height: 40px;
+    background:#a9927d ;
+    box-shadow: 3px 3px #000;
+    transition: 0.4s;
+}
+.button:hover{
+    box-shadow: 7px 7px #000;
+}
+.button a{
+    padding: 20px 10px;
+
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.right{
+    margin-left: 1000px;
+}
+.sus{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+.collapsible{
+        position: absolute;
+        height: 60px;
+        width: 1300px;
+        background-color: grey;
+        border: none;
+        top: 87%;
+        left:8%;
+        cursor: pointer;
+}
+.sus p{
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    animation: color-change 0.4s;
+    animation-iteration-count: infinite;
+}
+.sus a:hover{
+        overflow-scrolling: visible;
+
+}
+.svg-color1{
+    position: absolute;
+    fill: white;
+    height: 80px;
+    left: 3%;
+    top: 85%;
+    animation: arrow-move 0.7s;
+    animation-iteration-count: infinite;
+}
+.svg-color2{
+        position: absolute;
+        fill: white;
+        height: 80px;
+        right: 3%;
+        top: 85%;
+        animation: arrow-move 0.7s;
+        animation-iteration-count: infinite;
+}
+#content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+@keyframes arrow-move {
+        from {top: 85%;}
+        to {top:  88%;}
+}
+@keyframes color-change {
+        from {color: white;}
+        to {color:#a9927d  ;}
+}
+#logodiv{
+    padding-left: 250px;
+    padding-top: 200px;
+
+}
+.dishes-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: -45px;
+
+
+}
+#img1{
+    border: #FFF solid;
+    margin: 10px 0px;
+}
+#img2{
+        border: #FFF solid;
+        margin: 10px 0px;
+
+}
+
+#img3{
+        border: #FFF solid;
+        margin: 10px 0px;
+}
+
+.best-dish{
+    width:400px;
+
+}
+.best-dish h3{
+        margin-top: 30px;
+        margin-left: 0px;
+
+}
+.best-dish p{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+#to-menu{
+    right: 70px;
+    border: black solid;
+    top: 1870px;
+    width:130px;
+    margin-bottom: 200px;
+
+}
+.horaire{
+    margin-top: 200px;
+}
+
+.horaire h2{
+    margin-left: 300px;
+    margin-bot: 100px;
+    font-size: 40px;
+    text-decoration:underline;
+}
+.schedule{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot{
+    height: 240px;
+    margin-top: 50px;
+    background-color: rgb(116, 91, 81);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+}
+.footer-links{
+ margin: 70px;
+ margin-top: 45px;
+}
+.footer-links ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.footer-links ul li  a{
+    color: #a9927d;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.footer-links ul li  a:hover{
+    color:#C5B6A8;
+
+}
+.social-media{
+    margin-top: 80px;
+    text-align: center;
+}
+.social-media svg{
+    margin: 20px;
+    fill:#a9927d;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.social-media svg:hover{
+    fill:#C5B6A8;
+}
+.social-media p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.foot img{
+    margin: 40px;
+    margin-top: 60px;
+}

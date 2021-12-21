@@ -1,0 +1,94 @@
+
+body{
+    background-color: lightblue;
+
+}
+h2{
+
+    text-align: center;
+}
+#red{
+    color: red;
+}
+#red:hover{
+    color:blue;
+    transition: 1s;
+}
+#green{
+    color:green;
+}
+#blue{
+    color:blue;
+}
+p{
+    font-family: Verdana;
+    font-size:20px;
+    text-align: center;
+}
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+div {
+    border: 1px solid black;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 100px;
+    background-color: lightblue ;
+}
+a.one:link {color:#ff0000;}
+
+a.one:visited {color:#0000ff;}
+
+a.one:hover {color:#ffcc00;}
+
+a.two:link {color:#ff0000;}
+
+a.two:visited {color:#0000ff;}
+
+a.two:hover {font-size:150%;}
+
+a.three:link {color:#ff0000;}
+
+a.three:visited {color:#0000ff;}
+
+a.three:hover {background:#66ff66;}
+
+a.four:link {color:#ff0000;}
+
+a.four:visited {color:#0000ff;}
+
+a.four:hover {font-family:monospace;}
+
+a.five:link {color:#ff0000;text-decoration:none;}
+
+a.five:visited {color:#0000ff;text-decoration:none;}
+
+a.five:hover {text-decoration:underline;}
+
+ul.a {
+
+    list-style-type: circle;
+
+}
+
+ul.b {
+
+    list-style-type: square;
+
+}
+
+ol.c {
+
+    list-style-type: upper-roman;
+
+}
+
+ol.d {
+
+    list-style-type: lower-alpha;
+
+}

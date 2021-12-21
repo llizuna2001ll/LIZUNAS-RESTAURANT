@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice</title>
+    <script src="../javascript/exercice.js"></script>
+</head>
+<body>
+
+<input id="nbr1"> + <input id="nbr2">
+<button onclick="somme()">Calculer la somme</button> <button onclick="comparaison()">Comparer</button>
+ <p id="sum"></p>
+
+<h2>Equation 2eme degree</h2>
+
+<input id="nb1">x +<input id="nb2">x2 + <input id="nb3">
+<button onclick="equation()">Calculer le resultat</button>
+<p id="sum2"></p>
+
+</body>
+
+<script>
+
+    function somme() {
+        var nbr1, nbr2, sum;
+        nbr1 = Number(document.getElementById("nbr1").value);
+        nbr2 = Number(document.getElementById("nbr2").value);
+        sum = nbr1 + nbr2;
+        document.getElementById("sum").innerHTML = sum;
+        alert(sum);
+    }
+
+    function comparaison() {
+        var nbr1, nbr2, sum;
+        nbr1 = Number(document.getElementById("nbr1").value);
+        nbr2 = Number(document.getElementById("nbr2").value);
+        if(nbr1>nbr2) {
+            document.getElementById("sum").innerHTML = nbr1;
+            alert(nbr1);
+        }
+        else {
+            document.getElementById("sum").innerHTML = (nbr2);
+            alert(nbr2);
+        }
+    }
+
+    function equation() {
+        var nbr1, nbr2, nbr3, delta;
+        nbr1 = Number(document.getElementById("nb1").value);
+        nbr2 = Number(document.getElementById("nb2").value);1
+        nbr3 = Number(document.getElementById("nb3").value);
+        delta = Math.pow(nbr2, 2) - (4 * nbr1 * nbr3);
+
+        if (delta < 0) {
+            document.getElementById("sum2").innerHTML = ("il n'y a pas une solution possible");
+
+        }
+        else if(delta == 0) {
+
+            document.getElementById("sum2").innerHTML = ("S = { " + ((-b - (Math.sqrt(d))) / (2 * a)) + " ; " + ((-b + (Math.sqrt(d))) / (2 * a)) + " }");
+        }
+    }
+
+
+
+</script>
+
+
+</html>
